@@ -9,6 +9,7 @@
  */
 
 import type * as groups from "../groups.js";
+import type * as messages from "../messages.js";
 
 import type {
   ApiFromModules,
@@ -26,6 +27,7 @@ import type {
  */
 declare const fullApi: ApiFromModules<{
   groups: typeof groups;
+  messages: typeof messages;
 }>;
 declare const fullApiWithMounts: typeof fullApi;
 
